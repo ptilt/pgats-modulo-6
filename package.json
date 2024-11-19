@@ -1,0 +1,19 @@
+{
+  "name": "trabalho-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress open",
+    "cypress-report": "npx cypress run --spec cypress/e2e/test.cy.js",
+    "cypress-cloud": "browserstack-cypress run --sync --spec cypress/e2e/test.cy.js"
+  },
+  "keywords": [],
+  "author": "Pedro Costa",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.2",
+    "@faker-js/faker": "^8.4.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
