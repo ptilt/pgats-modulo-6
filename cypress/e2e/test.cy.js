@@ -21,7 +21,7 @@ describe('Automation Exercise - Trabalho Final', () => {
 
     it('Test Case 2: Login User with correct email and password', () => {
         menu.irParaLoginCadastro()
-        login.preencherlogin(existedEmail, '12345')
+        login.preencherlogin(existedEmail, '123456')
 
         cy.get('i.fa-user').parent().should('contain', 'Tester QA')
     });
@@ -37,7 +37,7 @@ describe('Automation Exercise - Trabalho Final', () => {
     it('Test Case 4: Signup User', () => {
         menu.irParaLoginCadastro()
 
-        login.preencherlogin(existedEmail, '12345')
+        login.preencherlogin(existedEmail, '123456')
         cy.get('i.fa-user').parent().should('contain', 'Tester QA')
         cy.contains('Logout').click()
 
